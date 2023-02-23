@@ -384,4 +384,61 @@ a {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 60px;
+}
+.footer {
+  background: #444240;
+  display: flex;
+  justify-content: space-between;
+  padding: 79px 185px 52px 185px;
+}
+.footer .info__logo {
+  display: flex;
+  margin-bottom: 22px;
+}
+.footer .info__logo_img {
+  position: relative;
+  top: -10px;
+}
+.footer .info__logo_title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+.footer .info__number {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+}
+.footer .info__email {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer .column__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+.footer .column__item {
+  margin-bottom: 15px;
+}
+.footer .column__item a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }/*# sourceMappingURL=style.css.map */
