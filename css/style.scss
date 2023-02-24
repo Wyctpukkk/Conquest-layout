@@ -128,6 +128,13 @@ a {
     line-height: 14px;
     letter-spacing: 0.05em;
     color: #ffffff;
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: #fdfdfb;
+      color: #444240;
+      border: 1px solid #444240;
+      transition-duration: 0.5s;
+    }
   }
   .product {
     position: relative;
@@ -296,11 +303,21 @@ a {
   background: linear-gradient(to right, #f7f5ef 34.5%, #fdfdfb 34.5%);
   .slider {
     margin: 52px 70px 20px 177px;
+    &__wrapper {
+      width: 521px;
+      height: 414px;
+      overflow: hidden;
+    }
     &__list {
+      display: flex;
+      transition-duration: 1s;
     }
     &__item {
     }
     &__img {
+      width: 521px;
+      height: 414px;
+      object-fit: cover;
     }
     &__btns {
       display: flex;
@@ -357,6 +374,13 @@ a {
       line-height: 14px;
       letter-spacing: 0.05em;
       color: #ffffff;
+      transition-duration: 0.5s;
+      &:hover {
+        background-color: #fdfdfb;
+        color: #444240;
+        border: 1px solid #444240;
+        transition-duration: 0.5s;
+      }
     }
     &__bg1 {
       position: absolute;
@@ -436,6 +460,7 @@ a {
         line-height: 19px;
         letter-spacing: 0.14em;
         color: #ffffff;
+        margin-left: 3px;
       }
     }
     &__number {
