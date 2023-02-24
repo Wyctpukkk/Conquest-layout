@@ -380,7 +380,7 @@ body.active {
   flex-direction: column;
   background-color: #fdfdfb;
   margin-bottom: 50px;
-  z-index: -2;
+  z-index: 2;
 }
 .catalog .item__name {
   text-transform: uppercase;
@@ -404,7 +404,7 @@ body.active {
   width: 313px;
   height: 313px;
   border-radius: 50%;
-  background-color: #fdfdfb;
+  background-color: #fdfdfd;
   margin-left: -11px;
 }
 .catalog .item__img img {
