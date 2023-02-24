@@ -6,12 +6,22 @@ const list = document.querySelector('.slider__list');
 let margin = 0;
 let currentSlide = 1;
 function slider(action) {
-  if (action === 'next' && margin > -2605) {
-    margin += -521;
-    currentSlide += 1;
-  } else if (action === 'prev' && margin < 0) {
-    margin += 521;
-    currentSlide += -1;
+  if (window.innerWidth > 560) {
+    if (action === 'next' && margin > -2605) {
+      margin += -521;
+      currentSlide += 1;
+    } else if (action === 'prev' && margin < 0) {
+      margin += 521;
+      currentSlide += -1;
+    }
+  } else {
+    if (action === 'next' && margin > -1850) {
+      margin += -370;
+      currentSlide += 1;
+    } else if (action === 'prev' && margin < 0) {
+      margin += 370;
+      currentSlide += -1;
+    }
   }
   list.style.marginLeft = `${margin}px`;
   page.innerHTML = `0${currentSlide}/06`;
