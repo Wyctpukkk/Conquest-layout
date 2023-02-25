@@ -8,13 +8,15 @@
 - :white_check_mark: 2. Использовать BEM.
 - :white_check_mark: 3. Использовать SCSS.
 - :white_check_mark: 4. Сделать верстку адаптивной под все экраны.
+
 ---
 
 ## Цели которые я поставил себе для того чтобы показать свои скиллы:
 
 - :white_check_mark: 1. Сделать рабочий слайдер.
 - :white_check_mark: 2. Сделать бургер меню.
-- :white_check_mark: 3. Проверить верстку валидаторами w3html,w3css,tinypng,lighthouse.
+- :white_check_mark: 3. Проверить верстку валидаторами, устранить все ошибки w3html,w3css,tinypng,lighthouse.
 
 ---
-![validator](https://i.ibb.co/kgH8hyM/validator.jpg)
+
+![validator](https://i.ibb.co/F0sGQwM/validator.jpg)
