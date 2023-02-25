@@ -1,8 +1,140 @@
-@import url(/css/resetstyle.css);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
 
-//   font-family: 'Playfair Display', serif;
-//   font-family: 'Prata', serif;
-//   font-family: 'Roboto', sans-serif;
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+// RESET
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('/fonts/Roboto-Bold.woff') format('woff'),
+    url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('/fonts/Roboto-Medium.woff') format('woff'),
+    url('/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+    url('/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('/fonts/Roboto-Regular.woff') format('woff'),
+    url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display Bold'), local('Playfair-Display-Bold'),
+    url('/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display Regular'), local('Playfair-Display-Regular'),
+    url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Prata';
+  src: local('Prata Regular'), local('Prata-Regular'),
+    url('/fonts/Prata-Regular.woff2') format('woff2'),
+    url('/fonts/Prata-Regular.woff') format('woff'),
+    url('/fonts/Prata-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// FONTS
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -29,8 +161,6 @@ body.active {
   .logo {
     margin-left: 105px;
     display: flex;
-    &__img {
-    }
     &__title {
       margin-left: 2px;
       position: relative;
@@ -466,6 +596,13 @@ body.active {
     }
   }
   @media (max-width: 450px) {
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__link {
+      top: 60px;
+      padding-bottom: 3px;
+    }
     .item {
       padding: 20px 20px 0px 20px;
     }
@@ -485,8 +622,6 @@ body.active {
     &__list {
       display: flex;
       transition-duration: 1s;
-    }
-    &__item {
     }
     &__img {
       width: 521px;
@@ -633,8 +768,6 @@ body.active {
       &__item {
         margin: 0px 9px;
       }
-      &__icon {
-      }
     }
   }
   &__photo-block1 {
@@ -642,8 +775,6 @@ body.active {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 60px;
-  }
-  &__photo-block2 {
   }
   @media (max-width: 1370px) {
     &__photo-block2 {
@@ -691,6 +822,11 @@ body.active {
     }
   }
   @media (max-width: 500px) {
+    &__photo-block2 {
+      img {
+        margin-bottom: 10px;
+      }
+    }
     .contacts {
       transform: scale(0.8);
       &__title {
@@ -754,8 +890,6 @@ body.active {
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 33px;
-    }
-    &__list {
     }
     &__item {
       margin-bottom: 15px;
